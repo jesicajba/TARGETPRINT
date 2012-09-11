@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+	
+.aviso{ clear: both; }
+.aviso, div.aviso {	width: 400px; 	height: auto; 	border: 1px; 	margin-top: 50px;	margin-left: 150px;	z-index: 100;	background-color: #c6faff; 	border-color: #800000;	
+border-style: solid;	-moz-border-radius-bottomleft: 10px;	-moz-border-radius-bottomright: 10px;	-ms-border-radius-bottomleft: 10px;	-ms-border-radius-bottomright: 10px;}
+.aviso p { padding: 10px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;  font-size: 12px; text-align: justify; }
+.aviso h1 { background-image: url(../img/usuales/alert.png); background-repeat:no-repeat; background-position-x: 15px; background-position-y: 3px; background-position: 5px;  
+  padding-left: 22px; color: #ffff80; background-color: #400000; font-weight: bold; height: 22px; font-size: 14px; margin: 0px; text-align: center; }
+.espacio20 { padding-left: 20px; float: left; }
+
+#pagina { border: 1px; padding: 0px; margin: 10px; background-color: #c6faff; border-color: #800000; border-style: solid;	-moz-border-radius-bottomleft: 10px;	-moz-border-radius-bottomright: 10px;	-ms-border-radius-bottomleft: 10px;	-ms-border-radius-bottomright: 10px; position: relative; }
+#pagina h1 { margin: 0; padding: 10px 30px; text-align: center; background-color: #919191; color: #ffffff;}
+#pagina div { float: left; margin: 10px; }
+#pagina p { padding: 5px 20px; font-family: "Lucida Sans"; font-size: 12px; }
+
+#pie { background-color: #13b353; padding: 10px; margin-top: 30px; color: #e5e5e5;}
+

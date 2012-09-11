@@ -1,0 +1,39 @@
+/*=======================================================================
+
+	â�¤â�¤â�¤ Gumby by Digital Surgeons. â�¤â�¤â�¤
+	
+	*** This is where you should keep all of your design specific styles ***
+ 
+ ========================================================================*/
+
+	.pretty.navbar {
+		background: -moz-linear-gradient(top, #bc625c 0%, #92312c 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5dbb73), color-stop(100%,#2d9047)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #bc625c 0%,#92312c 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #bc625c 0%,#92312c 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #bc625c 0%,#92312c 100%); /* IE10+ */
+		background: linear-gradient(top, #bc625c 0%,#92312c 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc625c', endColorstr='#92312c',GradientType=0 ); /* IE6-9 */
+		
+		-webkit-box-shadow: inset 0 1px 1px #de9b94,
+			0 1px 2px rgba(0,0,0,0.61) !important; /* Remove this line if you dont want a dropshadow on your navigation*/
+		box-shadow: inset 0 1px 1px #de9b94,
+					0 1px 2px rgba(0,0,0,0.61) !important; /* Remove this line if you dont want a dropshadow on your navigation*/
+	}
+	
+	.pretty.navbar li {
+		-webkit-box-shadow:
+			inset 1px 0 0 #df9393;
+		box-shadow:
+			inset 1px 0 0 #df9393;
+	}
+	
+	.pretty.navbar > ul > li:hover > a {
+		-webkit-box-shadow:	2px 0 0 #114a1e;
+		box-shadow: 2px 0 0 #114a1e;
+	}
+	
+.logo { display: table-cell; margin: 0px; line-height: 0; vertical-align: middle; }
+#cuerpo { min-height: 450px; } 	
+#pie { background-color: #92312c; padding: 10px; margin-top: 30px; color: #e5e5e5; text-align: center; }
+table { font-size: xx-small; }

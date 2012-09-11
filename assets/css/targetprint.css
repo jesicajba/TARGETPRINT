@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+#franja{ height:10px; 	background:#000 url(../imagenes/fondo2.jpg) repeat-x;}
+
+#menu {background:#000 url(../imagenes/fondo2.jpg) repeat-x; margin:0}
+
+#first{
+	margin-left:20%
+}
+
+#tel {
+	height: 56px;
+	width: 170px;
+	position: absolute;
+	left: 75%;
+	top: 0px;
+	background: #F30 url(../imagenes/fondo3.jpg) repeat-x;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 12px;
+	line-height: 20px;
+	overflow:hidden;
+	text-indent: 10px;
+}
+
+#pagina{ width:960px; margin:auto; min-height:400px;}
+
+.item{width:195px; height:210px; margin:10px 7px 10px 7px; border: 1px solid #000; background-color: #fff; float:left;
+}
+
+.itemimg{ width:195px; height:120px;}
+
+.itemtxt{ width:185px; height:80px; 	background-color:#1B1F27;padding:5px;}
+
+.itemparrafo{width:185px;line-height:8px;color:#fff;text-align:left;overflow:visible;font-size:11px;margin-top:5px;font-family: Verdana, Geneva, sans-serif; height:57px;
+}
+
+.precio{height:18px; background:#F30; line-height:18px; text-indent:10px; font-weight:bold; color:#FFF; font-size:13px}
+
+.pie{
+	border-bottom:1px #FFF solid;
+	width:98%;
+	margin-bottom: 5px;
+}
+
+.imggrande{width:325px; height:325px; margin:10px 5px 10px 0px; border: 1px solid #000; background-color: #fff; float:left;
+}
+
+.descripcion{ 	background-color:#1B1F27; margin:10px 0px 10px 5px; float:right; width:300px}
+
+.descripciontxt{line-height:8px;color:#fff;text-align:left;font-size:11px;font-family: Verdana, Geneva, sans-serif; height:57px; margin:5px;
+}
+
+.descripcionparrafo{border-bottom:15px solid #1B1F27}
+
+.especificaciones{border-bottom:medium solid #1B1F27}
+
+.paginaItems{ margin:5px 0px 5px 0px;
+	border-bottom:solid thin #000;
+	border-top:solid thin #000;}
+
+.nropaginas{ height:15px; line-height:15px; text-align:right; font-weight:bold; color:#000; margin:5px 0 5px 0}
+
+.slider{ width:960px; height:68px; margin:0px 0px 10px 0px; overflow:hidden;}

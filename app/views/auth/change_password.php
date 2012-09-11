@@ -1,22 +1,48 @@
-<h1>Change Password</h1>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<div id="infoMessage"><?php echo $message;?></div>
+<head>
+<?php $this->load->view("head.php") ?>
+<?php $this->load->view("script.php")?>
+</head>
 
-<?php echo form_open("auth/change_password");?>
+<body>
+<div>
+  <div id="contenido">
+	<?php $this->load->view("cenefa.php")?>
+	<?php $this->load->view("menu.php")?>        
+			
+	<div id="cuerpo"> 
+            <div class="fverde">
+            	<div class="espacio20">&nbsp;</div>
+                <h1>Cambio de clave</h1>
 
-      <p>Old Password:<br />
-      <?php echo form_input($old_password);?>
-      </p>
+                <div class="ui-state-highlight"><?php echo $message;?></div>
+
+                <?php echo form_open("auth/change_password");?>
+                <?php echo form_fieldset("CAMBIO DE CLAVE"); ?>    
+                <?php echo form_label("Clave anterior:" ); ?>
+                <?php echo form_input($old_password);?>
       
-      <p>New Password (at least <?php echo $min_password_length;?> characters long):<br />
-      <?php echo form_input($new_password);?>
-      </p>
+                <?php echo form_label("Nueva clave:" ); ?>
+                <?php echo form_input($new_password);?>
       
-      <p>Confirm New Password:<br />
-      <?php echo form_input($new_password_confirm);?>
-      </p>
+                <?php echo form_label("Confirme Nueva clave:"); ?>
+                <?php echo form_input($new_password_confirm);?>
+                <?php echo form_fieldset_close(); ?>    
+                <?php echo form_input($user_id);?>
+                <p><?php echo form_submit('submit', 'cambiar');?></p>
       
-      <?php echo form_input($user_id);?>
-      <p><?php echo form_submit('submit', 'Change');?></p>
-      
-<?php echo form_close();?>
+                <?php echo form_close();?>
+
+            </div> <!-- fin verde -->   
+   </div> <!-- fin cuerpo -->
+   <div class="separador"></div>
+   <?php $this->load->view("pie.php") ?>
+   
+  </div><!--fin contenido-->
+</div>
+</body>
+
+</html>

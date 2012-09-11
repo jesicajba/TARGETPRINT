@@ -58,7 +58,7 @@
         	<a class="export-anchor" data-url="<?php echo $export_url; ?>" target="_blank">
 				<div class="fbutton">
 					<div>
-						<span class="export">Export</span>
+						<span class="export">Exportar</span>
 					</div>
 				</div>
             </a>
@@ -68,7 +68,7 @@
         	<a class="print-anchor" data-url="<?php echo $print_url; ?>">
 				<div class="fbutton">
 					<div>
-						<span class="print">Print</span>
+						<span class="print">Imprimir</span>
 					</div>
 				</div>
             </a>
