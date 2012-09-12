@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<?php $this->load->view("admin/head_adm960.php") ?>
+<body>
+	<div class="container_16">
+		<?php $this->load->view("admin/cenefa.php")?>
+		<?php $this->load->view("admin/menu.php")?>        
+			
+		<div class="grid_16 block" id="cuerpo"> 
+            <div><?php echo $message;?></div>
+            
+			<h1>Lista de usuarios</h1>
 	
-<head>
-<?php $this->load->view("head.php") ?>
-<?php $this->load->view("script.php")?>
+        	<table id="tabla" class="display pretty">
+			<thead>
+				<th width="10%" align="center">ID</th>
+				<th width="25%">USUARIO</th>
+				<th width="55%">EMAIL</th>
+            	<th width="10%" align="center">ESTADO</th>
+			</thead>
+			<tbody>
+			<?php foreach ($users as $user):?>
+				<tr>				
+					<td align="center"><?php echo $user->id; ?></td>
+					<td><?php echo $user->username; ?></td>
+					<td><?php echo $user->email; ?></td>
+					<td align="center"><?php echo ($user->active) ? anchor("auth/deactivate/".$user->id, 'Activo') : anchor("aut/activate/". $user->id, 'Inactivo');?></td>
+				</tr>
+			<?php endforeach;?>
+			</tbody>
+			</table>
+	
+			<p align="center"><a href="<?php echo site_url('auth/crear_usuario');?>">Crear nuevo usuario</a>
+    	</div>    
+   		<?php $this->load->view("admin/pie.php") ?>
+   
+  	</div><!--fin pagina-->
+
 <script>
 
 $(document).ready(function(){
@@ -29,43 +58,7 @@ $(document).ready(function(){
         tr.impar { background-color: #FEF1E9; }
         tr.par { background-color: #FEF9ED; }
     </style>
-</head>
-
-<body>
-  <div id="contenido">
-	<?php $this->load->view("cenefa.php")?>
-	<?php $this->load->view("menu.php")?>        
-				
-	<div id="cuerpo"> 
-
-	<h1 class="ui-widget-header">Lista de usuarios</h1>
-	
-        <table cellpadding=0 cellspacing=0 width="90%" align="center">
-		<thead>
-			<th width="10%" align="center">ID</th>
-			<th width="25%">USUARIO</th>
-			<th width="55%">EMAIL</th>
-            <th width="10%" align="center">ESTADO</th>
-		</thead>
-		<tbody>
-		<?php foreach ($users as $user):?>
-			<tr>				
-				<td align="center"><?php echo $user->id; ?></td>
-				<td><?php echo $user->username; ?></td>
-				<td><?php echo $user->email; ?></td>
-				<td align="center"><?php echo ($user->active) ? anchor("auth/deactivate/".$user->id, 'Activo') : anchor("aut/activate/". $user->id, 'Inactivo');?></td>
-			</tr>
-		<?php endforeach;?>
-		</tbody>
-	</table>
-	
-	<p align="center"><a href="<?php echo site_url('auth/crear_usuario');?>">Crear nuevo usuario</a>
-
-
-    </div>    
-    <?php $this->load->view("pie.php") ?>
-   
-  </div><!--fin pagina-->
+  
 </body>
 
 </html>
