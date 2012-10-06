@@ -64,3 +64,17 @@
 .nropaginas{ height:15px; line-height:15px; text-align:right; font-weight:bold; color:#000; margin:5px 0 5px 0}
 
 .slider{ width:960px; height:68px; margin:0px 0px 10px 0px; overflow:hidden;}
+
+#datos{ float:left; margin-left:3%; color:#000; font-size:14px; font-weight:bold}
+
+#contacto{margin-top:10px; text-align:left}
+
+.btnContacto {height: 20px; background: #F30 url(../imagenes/fondo3.jpg) repeat-x; font-family: Verdana, Geneva, sans-serif; font-weight: bold;	color: #FFF; font-size: 12px;  line-height: 20px; float:left; margin-right:5px; padding: 0 10px 0 10px}
+
+.btnContacto a { color:#FFF}
+
+.btnContacto a:hover { color:#FF0}
+
+.txtContacto{margin:0 0 30px 0; line-height:20px}
+
+.imgcontacto{ width:57px; height:78px; float:left; margin:25px 15px 0 0;}
