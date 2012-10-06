@@ -1,5 +1,4 @@
-        	<div class="box grid_16">
-				<h2 id="franja"></h2>
+        	<div class="box grid_16" id="franja">
 			</div>
 
 			<div class="grid_16" >

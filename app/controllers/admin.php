@@ -143,14 +143,13 @@
     		$this->grocery_crud->columns('marca','descripcion', 'imagen');
     		
 			$this->grocery_crud->required_fields('marca', 'ID');						
-    		$this->grocery_crud->set_field_upload('imagen','img/uploads');
+    		$this->grocery_crud->set_field_upload('imagen','assets/uploads');
     		$this->grocery_crud->set_subject('Marca');
 
 			$this->grocery_crud->set_rules('marca', 'marca', 'required');
 			$this->grocery_crud->set_rules('descripcion', 'descripcion', 'required');
 			
     		$this->grocery_crud->display_as('marca','ID');
-			// $this->grocery_crud->set_theme("dataTables");
     		$output = $this->grocery_crud->render();
  
     		$this->load->view( "admin/abm", $output);
@@ -180,8 +179,8 @@
 			$this->grocery_crud->set_rules('marca', 'marca', 'required');
 			$this->grocery_crud->set_rules('posicion', 'posicion', 'required|is_natural');
     		
-    		$this->grocery_crud->set_field_upload('imagen','img/arti');
-    		$this->grocery_crud->set_field_upload('imagengra','img/arti');
+    		$this->grocery_crud->set_field_upload('imagen','assets/img/arti');
+    		$this->grocery_crud->set_field_upload('imagengra','assets/img/arti');
     		$this->grocery_crud->display_as('imagengra','Imagen grande (800x800)');
     		$this->grocery_crud->display_as('imagen','Imagen (350x350)');
 

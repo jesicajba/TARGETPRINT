@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  
 /* Translated by Hector Cyc */
 	$lang['list_add']				= 'Agregar';
 	$lang['list_actions']			= 'Acciones';
@@ -50,10 +50,10 @@
 	$lang['update_error']			= 'Ocurrio un error guardando.';
 	
 	/* Added in version 1.2.1 */
-	$lang['set_relation_title']		= 'Select {field_display_as}';	
-	$lang['list_record']			= 'Record';
-	$lang['form_inactive']			= 'inactive';
-	$lang['form_active']			= 'active';
+	$lang['set_relation_title']		= 'Seleccionar {field_display_as}';	
+	$lang['list_record']			= 'Registro';
+	$lang['form_inactive']			= 'inactivo';
+	$lang['form_active']			= 'activo';
 	
 	/* Added in version 1.2.2 */
 	$lang['form_save_and_go_back']	= 'Guardar y volver a la lista';
@@ -69,3 +69,8 @@
 	$lang['error_accept_file_types'] 	= "No esta permitido subir archivos con esta extension.";
 	$lang['error_max_file_size'] 		= "El archivo subido excede el tamaño maximo permitido: {max_file_size}.";
 	$lang['error_min_file_size'] 		= "No puede subir un archivo vacio.";
+
+	/* Added in version 1.3.1 */
+	$lang['list_export'] 	= "Exportar";
+	$lang['list_print'] 	= "Imprimir";
+	$lang['minimize_maximize'] = 'Minimizar/Maximizar';

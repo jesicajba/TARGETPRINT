@@ -1,6 +1,5 @@
-<div class='row'>
+<div class='grid_16'>
     <div id="logoimagen">
-        <img src="img/admin/logo.png" />
+        <img src="assets/img/admin/logo.png" />
     </div><!--fin logo img-->
 </div>        
-<div class="clear"></div>    

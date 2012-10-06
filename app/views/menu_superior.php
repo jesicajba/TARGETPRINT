@@ -71,17 +71,13 @@
 						</ul>
 					</li>
                     <li>
-						<a href="http://symphony-cms.com/discuss/thread/231/">Accesorios</a>
+						<a href="http://symphony-cms.com/discuss/thread/231/">Contacto</a>
 						<ul>
 							<li>
-								<a href="http://github.com/bauhouse/fluid960gs/tree/">Accesorios 1</a>
+								<a href="http://github.com/bauhouse/fluid960gs/tree/">Consultas</a>
 							</li>
 							<li>
-								<a href="http://github.com/bauhouse/sym-fluid960gs/tree/">Accesorios 2</a>
-							</li>
-							<li>
-								<a href="http://symphony-cms.com/discuss/thread/231/">Accesorios 3</a>
-							</li>
+							<a href="http://github.com/bauhouse/sym-fluid960gs/tree/">Consultas al gremio</a></li>
 						</ul>
 					</li>
 				</ul>
